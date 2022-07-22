@@ -1,1 +1,10 @@
 
+#!/bin/bash
+#
+mkdir /tmp/myexec
+#echo PATH=/tmp/myexec:$PATH >> ~/.bashrc
+echo 'echo $(date)' > /tmp/myexec/$1
+chmod 777 /tmp/myexec/$1
+/tmp/myexec/$1
+#alias installer='~/bashworks/work2/installer
+
